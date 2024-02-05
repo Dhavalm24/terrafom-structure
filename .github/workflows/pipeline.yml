@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       subscription:
-        description: "Enter the Subscription Name"
+        description: "Enter Subscription Name"
         required: true
       service:
-        description: "Enter the Name of the service"
+        description: "Enter Service Name"
         required: true
       environment:
         description: "Select the Environment"
