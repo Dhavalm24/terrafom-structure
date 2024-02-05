@@ -10,7 +10,7 @@ on:
         description: "Enter Service Name"
         required: true
       environment:
-        description: "Select the Environment"
+        description: "Select Environment"
         required: false
         type: choice
         options: 
