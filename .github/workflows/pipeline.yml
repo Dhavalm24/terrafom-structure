@@ -13,7 +13,20 @@ on:
         description: "Select the Environment"
         required: false
         type: choice
-        option: 
+        options: 
           - dev
           - nprd
           - prod
+
+env:
+  SERVICE: ${{ github.event.inputs.service }}
+  ENVIRONMENT: ${{ github.event.inputs.environment }}
+
+jobs:
+  Terraform_Init:  
+    name: Terraform Plan "${{ env.SERVICE }}" "${{ env.ENVIRONMENT }}"
+    runs-on: [self-hosted]    
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
