@@ -1,4 +1,4 @@
-name: "scf-foundations-terraform"
+name: "terraform"
 
 on:
   workflow_dispatch:
