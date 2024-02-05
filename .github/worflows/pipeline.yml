@@ -1,0 +1,19 @@
+name: "scf-foundations-terraform"
+
+on:
+  workflow_dispatch:
+    inputs:
+      subscription:
+        description: "Enter the Subscription Name"
+        required: true
+      service:
+        description: "Enter the Name of the service"
+        required: true
+      environment:
+        description: "Select the Environment"
+        required: false
+        type: choice
+        option: 
+          - dev
+          - nprd
+          - prod
